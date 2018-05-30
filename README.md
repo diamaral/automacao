@@ -1,4 +1,4 @@
-[![Build Status](https://img.shields.io/travis/USER/REPO/BRANCH.svg)](https://img.shields.io/diamaral/automacao)
+[![Build Status](https://img.shields.io/travis/diamaral/automacao/BRANCH.svg)](https://img.shields.io/travis/diamaral/automacao)
 
 # Automation Test Java Project
 
