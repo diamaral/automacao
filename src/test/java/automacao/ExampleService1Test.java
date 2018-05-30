@@ -11,32 +11,24 @@ public class ExampleService1Test {
 
 	@Test
 	public void testService() {
-		String response = soap.sendRequestByString("http://ws-investimentos.hom.sicredi.net:80/PosicaoConsolidadaBean/PosicaoConsolidadaService?WSDL", 
-				"<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:pos=\"http://sicredi.com.br/investimentos/posicaoConsolidada/ws/v1/PosicaoConsolidada/\">\r\n" + 
-						"   <soapenv:Header/>\r\n" + 
-						"   <soapenv:Body>\r\n" + 
-						"      <pos:buscarPosicaoConsolidada>\r\n" + 
-						"         <!--Optional:-->\r\n" + 
-						"         <pos:InBuscarPosicaoConsolidada>\r\n" + 
-						"            <!--Optional:-->\r\n" + 
-						"            <codigoCanal>002</codigoCanal>\r\n" + 
-						"            <!--Optional:-->\r\n" + 
-						"            <numeroAgencia>0136</numeroAgencia>\r\n" + 
-						"            <!--Optional:-->\r\n" + 
-						"            <numeroConta>530948</numeroConta>\r\n" + 
-						"            <!--Optional:-->\r\n" + 
-						"            <tipoOrigemConsulta>CONSULTA</tipoOrigemConsulta>\r\n" + 
-						"         </pos:InBuscarPosicaoConsolidada>\r\n" + 
-						"      </pos:buscarPosicaoConsolidada>\r\n" + 
-						"   </soapenv:Body>\r\n" + 
+		String response = soap.sendRequestByString("http://localhost:7001/HelloWorldBean/HelloWorldService?WSDL", 
+				"<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:hel=\"http://sicredi.com.br/devops/poc/ws/v1/helloWorld/\">\r\n" + 
+				"   <soapenv:Header/>\r\n" + 
+				"   <soapenv:Body>\r\n" + 
+				"      <hel:echo>\r\n" + 
+				"         <hel:InEcho>\r\n" + 
+				"            <hel:msg>Hello-World</hel:msg>\r\n" + 
+				"         </hel:InEcho>\r\n" + 
+				"      </hel:echo>\r\n" + 
+				"   </soapenv:Body>\r\n" + 
 				"</soapenv:Envelope>");
 
-		String value = soap.getValuesByTag(response, "nomeProduto").get(0);
+		String value = soap.getValuesByTag(response, "dspcws:msg").get(0);
 		
 		value = value.substring(value.indexOf(">") + 1);
 		value = value.substring(0, value.indexOf("</"));
 
-		assertEquals("POUPANCA TRADICIONAL", value);
+		assertEquals("Hello-World >", value);
 	}
 
 }

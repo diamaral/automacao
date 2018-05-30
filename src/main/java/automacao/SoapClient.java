@@ -20,7 +20,6 @@ import org.xml.sax.SAXException;
 public class SoapClient {
 	private SoapWebService soap = new SoapWebService();
 	private HttpURLConnection connection;
-	//private static final Logger LOGGER = Logger.getLogger(SoapClient.class);
 
 	public String sendRequestByPath(String webServiceUrl, String XmlPathRequest) {
 		connection = soap.getConnection(webServiceUrl);
