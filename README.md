@@ -6,10 +6,10 @@ Template to test automation using selenium java.
 
 Directory soapui contain micro service project in .xml format
 
-### Execution functional test in maven do follows steps:
+### Follows command to execution functional test soap on the maven:
 
 - mvn clean soapui:test
 
-### Execution load test in maven do the follows steps:
+### Follows command to execution load test soap on the maven:
 
 - mvn clean soapui:loadtest
