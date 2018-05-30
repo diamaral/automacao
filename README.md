@@ -1,4 +1,4 @@
-# Automation Test Java Project 
+# Automation Test Java Project https://img.shields.io/travis/USER/REPO/BRANCH.svg
 
 Template to test automation using selenium java. 
 
