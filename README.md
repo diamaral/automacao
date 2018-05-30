@@ -1,4 +1,4 @@
-[![pipeline status](https://img.shields.io/travis/USER/REPO/BRANCH.sv)
+[![Build Status](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME}.png?branch=master)](https://travis-ci.org/{ORG-or-USERNAME}/{REPO-NAME})
 
 # Automation Test Java Project
 
