@@ -1,4 +1,4 @@
-[![Build Status](https://semaphoreapp.com/api/v1/projects/d4cca506-99be-44d2-b19e-176f36ec8cf1/128505/shields_badge.svg)](https://semaphoreapp.com/diamaral/automacao)
+[![Build Status](https://img.shields.io/travis/USER/REPO/BRANCH.svg)](https://img.shields.io/diamaral/automacao)
 
 # Automation Test Java Project
 
