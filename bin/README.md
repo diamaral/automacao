@@ -1,4 +1,4 @@
-[![pipeline status](https://img.shields.io/travis/USER/REPO/BRANCH.sv)
+[![pipeline status](https://img.shields.io/travis/USER/REPO/BRANCH.sv)(https://git.sicredi.net/template/sicredi-devops-poc-ws-helloWorld/commits/master)
 
 # Automation Test Java Project
 

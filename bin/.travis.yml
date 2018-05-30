@@ -1,0 +1,7 @@
+version: '1.0'
+
+steps:
+ buid:
+  type: build
+  command: mvn clean compile
+   
