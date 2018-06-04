@@ -1,4 +1,4 @@
-package automacao;
+package automacao.services;
 
 import java.io.IOException;
 import java.io.OutputStream;

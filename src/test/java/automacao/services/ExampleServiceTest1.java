@@ -4,9 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import automacao.SoapClient;
-import automacao.SoapWebService;
-
 public class ExampleServiceTest1 {
 	SoapClient soap = new SoapClient();
 	SoapWebService webService = new SoapWebService();
