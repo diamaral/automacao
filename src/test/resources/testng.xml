@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="login" thread-count="13" parallel="classes">
+  <test thread-count="13" name="Test">
+    <classes>
+      <class name="sicredi.testng.Example1Testng"/>
+      <class name="sicredi.testng.Example2Testng"/>
+      <class name="sicredi.testng.Example3Testng"/>
+      <class name="sicredi.testng.Example4Testng"/>
+      <class name="sicredi.testng.Example5Testng"/>
+      <class name="sicredi.testng.Example6Testng"/>
+      <class name="sicredi.testng.Example7Testng"/>
+      <class name="sicredi.testng.Example8Testng"/>
+      <class name="sicredi.testng.Example9Testng"/>
+      <class name="sicredi.testng.Example10Testng"/>
+      <class name="sicredi.testng.Example11Testng"/>
+      <class name="sicredi.testng.Example12Testng"/>
+      <class name="sicredi.testng.Example13Testng"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- login -->
